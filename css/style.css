@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+}
+th, td {
+    padding: 5px;
+    max-width: 200px;
+}
+h1 {
+    text-align: center;
+    margin: 0%;
+}
+p, h1, h2, h3, h4, h5, h6, li, dt, dd {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+img {
+    border: 5px solid white;
+}
