@@ -34,3 +34,8 @@ a:hover {
 img {
     border: 5px solid white;
 }
+span {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
