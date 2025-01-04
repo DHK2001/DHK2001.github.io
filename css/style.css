@@ -1,17 +1,18 @@
-body {
-    background-color: black;
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
-.container {
+main {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
 table, th, td {
     border-collapse: collapse;
-    border: 1px solid white;
+    border: 1px solid black;
     width: 300px;
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     word-wrap: break-word;
 }
@@ -25,14 +26,14 @@ h1 {
 }
 p, h1, h2, h3, h4, h5, h6, li, dt, dd {
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
 }
 a:hover {
-    color: white;
+    color: black;
     font-weight: bold;
 }
 img {
-    border: 5px solid white;
+    border: 5px solid black;
 }
 span {
     color: red;
