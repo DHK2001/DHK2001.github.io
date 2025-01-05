@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
   <head>
     <title>First Webpage</title>
@@ -12,7 +13,7 @@
     <main>
       <section>
         <h2>Paragraphs</h2>
-        <p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+        <p>Paragraphs in HTML are defined using the &lt;p&gt; element.</p>
         <p>This is your <b>paragraph</b>.</p>
         <p>This is your <i>second paragraph</i>.</p>
         <p>This is your <strong>third paragraph</strong>.</p>
@@ -28,7 +29,7 @@
 
       <section>
         <h2>Lang Attribute</h2>
-        <p>In HTML, you can specify the language of a text using the <strong>lang</strong> attribute.</p>
+        <p>The lang attribute specifies the language of the element's content.</p>
         <p lang="en">This is a paragraph in English.</p>
         <p lang="es">Este es un párrafo en español.</p>
         <p lang="fr">Ceci est un paragraphe en français.</p>
@@ -36,7 +37,7 @@
 
       <section>
         <h2>Headings</h2>
-        <p>In HTML, you define a header using the &lt;h1&gt; to &lt;h6&gt; elements.</p>
+        <p>Headings in HTML are defined using the &lt;h1&gt; to &lt;h6&gt; elements.</p>
         <h1 style="text-align: justify">This is a header 1</h1>
         <h2>This is a header 2</h2>
         <h3>This is a header 3</h3>
@@ -47,31 +48,41 @@
 
       <section>
         <h2>Links</h2>
-        <p>
-          <a href="https://www.google.com" title="Google">Google</a> is an
-          American company that focuses on <strong>internet</strong> and the
-          <strong>technologies</strong> that interact with it.
-        </p>
+        <p>Links in HTML are defined using the &lt;a&gt; element.</p>
+        <a href="https://www.google.com" title="Google">Google</a> is an American company that focuses on <strong>internet</strong> and the <strong>technologies</strong> that interact with it.
+        <br />
+        <a
+          href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+          download="firefox-latest-64bit-installer.exe">
+          Download Latest Firefox for Windows (64-bit) (English, US)
+        </a>
+        <br />
+        <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+        <br />
+        <a
+          href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+          Send mail with cc, bcc, subject and body
+        </a> <!-- mailto link with subject and body -->
       </section>
 
       <section>
         <h2>Images</h2>
-        <p>In HTML, you can define an image using the &lt;img&gt; element.</p>
+        <p>Images in HTML are defined using the &lt;img&gt; element.</p>
         <img src="img/image.png" width="300" height="300" alt="Description of the image" />
       </section>
 
       <section>
         <h2>Lists</h2>
-        <p>In HTML, you define a list using the &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; elements.</p>
+        <p>Lists in HTML are defined using the &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; elements.</p>
 
-        <h3>Ordered</h3>
+        <h3>Ordered List</h3>
         <ol>
           <li>First item</li>
           <li>Second item</li>
           <li>Third item</li>
         </ol>
 
-        <h3>Unordered</h3>
+        <h3>Unordered List</h3>
         <ul>
           <li>First item</li>
           <li>Second item</li>
@@ -83,7 +94,7 @@
           </ul>
         </ul>
 
-        <h3>Definition</h3>
+        <h3>Definition List</h3>
         <dl>
           <dt>First term</dt>
           <dd>First definition</dd>
@@ -95,7 +106,7 @@
 
       <section>
         <h2>Tables</h2>
-        <p>In HTML, you define a table using the &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; elements.</p>
+        <p>Tables in HTML are defined using the &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; elements.</p>
         <table>
           <thead>
             <tr>
@@ -137,12 +148,16 @@
 
       <section>
         <h2>WhiteSpaces</h2>
+        <p>Whitespace in HTML is generally ignored, but it can affect the layout of your text.</p>
         <p id="noWhitespace">Dogs are silly</p>
-        <p id="whitespace">Dogs are silly.</p>
+        <p id="whitespace">Dogs 
+            are 
+               silly.</p>
       </section>
 
       <section>
-        <h2>Character references</h2>
+        <h2>Character References</h2>
+        <p>Character references in HTML are used to display special characters.</p>
         <table>
           <thead>
             <tr>
@@ -177,24 +192,28 @@
 
       <section>
         <h2>Comments</h2>
-        <p>In HTML, you define a comment using the &lt;!-- &quot;your comment here&quot; --&gt; element. Comments are not displayed in the browser.</p>
+        <p>Comments in HTML are defined using the &lt;!-- &quot;your comment here&quot; --&gt; element. Comments are not displayed in the browser.</p>
         <!--This is a comment-->
       </section>
 
       <section>
-        <h2>Examples Pages</h2>
+        <h2>Example Pages</h2>
+        <p>Here are some example pages:</p>
         <a href="mozilla-example.html">Mozilla Example</a>
         <br />
         <a href="meta-examples.html" title="Meta">Meta Example</a>
         <br />
         <a href="nav-bar-example/index.html" title="HTML">Nav Bar Example</a>
+        <br />
+        <a href="navigation-menus-star/index.html">Navigation Menu Star</a>
+        <br />
+        <a href="letter/letter.html">Letter</a>
       </section>
 
       <section>
         <h2>Blockquote</h2>
-        <p>Here is a blockquote:</p>
-        <blockquote
-          cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>The &lt;blockquote&gt; element is used to indicate that the enclosed text is an extended quotation.</p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
           <p>
             The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
             <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
@@ -205,15 +224,17 @@
 
       <section>
         <h2>Quotation</h2>
-        <p>Here is a quotation:</p>
+        <p>The &lt;q&gt; element is used to indicate that the enclosed text is a short inline quotation.</p>
         <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
           The <strong>HTML <code>&lt;q&gt;</code> Element</strong> (or <em>HTML
           Quotation Element</em>) indicates that the enclosed text is a short inline
           quotation.
+        </q>
       </section>
 
       <section>
         <h2>Cite</h2>
+        <p>The &lt;cite&gt; element is used to reference the title of a work.</p>
         <p>
           The quote element — <code>&lt;q&gt;</code> — is
           <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
@@ -225,12 +246,47 @@
 
       <section>
         <h2>Abbreviation</h2>
+        <p>The &lt;abbr&gt; element is used to represent an abbreviation or acronym.</p>
         <p>
           We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our web
           documents.
         </p>
       </section>
 
+      <section>
+        <h2>Address</h2>
+        <p>The &lt;address&gt; element is used to provide contact information for the author or owner of a document.</p>
+        <address>
+          Chris Mills<br />
+          Manchester<br />
+          The Grim North<br />
+          UK
+        </address>
+        <ul>
+          <li>Tel: 01234 567 890</li>
+          <li>Email: me@grim-north.co.uk</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Superscript</h2>
+        <p>The &lt;sup&gt; element is used to define superscript text.</p>
+        <p>This is your <sup>9th paragraph</sup>.</p>
+      </section>
+
+      <section>
+        <h2>Subscript</h2>
+        <p>The &lt;sub&gt; element is used to define subscript text.</p>
+        <p>This is your <sub>10th paragraph</sub>.</p>
+      </section>
+
+      <section>
+        <h2>Time</h2>
+        <p>The &lt;time&gt; element is used to represent a specific period in time.</p>
+        <p>
+          <time datetime="2021-01-01">January 1, 2021</time>
+        </p>
+      </section>
     </main>
     <script src="scripts/main.js"></script>
   </body>
