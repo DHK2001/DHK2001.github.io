@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Table template</h1>
+    <caption>
+      <p style="text-align: center;">
+        Data about the planets of our solar system (Planetary facts taken from 
+        <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">
+        Nasa's Planetary Fact Sheet - Metric
+      </a>).
+      </p>
+    </caption>
+    <table>
+      <colgroup>
+        <col span="2"> <!-- First two columns no border -->
+        <col style="border: 2px solid black;"> <!-- Third column has border -->
+        <col span="9"> <!-- Remaining columns no border -->
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2">&nbsp;</th>
+          <th>Name</th>
+          <th>Mass (10<sup>24</sup>kg)</th>
+          <th>Diameter (km)</th>
+          <th>Density (kg/m<sup>3</sup>)</th>
+          <th>Gravity (m/s<sup>2</sup>)</th>
+          <th>Length of day (hours)</th>
+          <th>Distance from Sun (10<sup>6</sup>km)</th>
+          <th>Mean temperature (°C)</th>
+          <th>Number of moons</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <tr>
+            <td rowspan="4" colspan="2" scope="rowgroup"><strong>Terrestrial planets</strong></td>
+            <td headers="name"><strong>Mercury</strong></td>
+            <td headers="mass">0.330</td>
+            <td headers="diameter">4,879</td>
+            <td headers="density">5427</td>
+            <td headers="gravity">3.7</td>
+            <td headers="day-length">4222.6</td>
+            <td headers="distance">57.9</td>
+            <td headers="temperature">167</td>
+            <td headers="moons">0</td>
+            <td headers="notes">Closest to the Sun</td>
+          </tr>
+          <tr>
+            <td headers="name"><strong>Venus</strong></td>
+            <td headers="mass">4.87</td>
+            <td headers="diameter">12,104</td>
+            <td headers="density">5243</td>
+            <td headers="gravity">8.9</td>
+            <td headers="day-length">2802.0</td>
+            <td headers="distance">108.2</td>
+            <td headers="temperature">464</td>
+            <td headers="moons">0</td>
+          </tr>
+          <tr>
+            <td headers="name"><strong>Earth</strong></td>
+            <td headers="mass">5.97</td>
+            <td headers="diameter">12,756</td>
+            <td headers="density">5514</td>
+            <td headers="gravity">9.8</td>
+            <td headers="day-length">24.0</td>
+            <td headers="distance">149.6</td>
+            <td headers="temperature">15</td>
+            <td headers="moons">1</td>
+            <td headers="notes">Our world</td>
+          </tr>
+          <tr>
+            <td headers="name"><strong>Mars</strong></td>
+            <td headers="mass">0.642</td>
+            <td headers="diameter">6,792</td>
+            <td headers="density">3933</td>
+            <td headers="gravity">3.7</td>
+            <td headers="day-length">24.7</td>
+            <td headers="distance">227.9</td>
+            <td headers="temperature">-65</td>
+            <td headers="moons">2</td>
+            <td headers="notes">The red planet</td>
+          </tr>
+          <tr>
+            <td rowspan="4" scope="rowgroup"><strong>Jovian planets</strong></td>
+            <td rowspan="2" scope="rowgroup"><strong>Gas giants</strong></td>
+            <td headers="name"><strong>Jupiter</strong></td>
+            <td headers="mass">1898</td>
+            <td headers="diameter">142,984</td>
+            <td headers="density">1326</td>
+            <td headers="gravity">23.1</td>
+            <td headers="day-length">9.9</td>
+            <td headers="distance">778.6</td>
+            <td headers="temperature">-110</td>
+            <td headers="moons">67</td>
+            <td headers="notes">The largest planet</td>
+          </tr>
+          <tr>
+            <td headers="name"><strong>Saturn</strong></td>
+            <td headers="mass">568</td>
+            <td headers="diameter">120,536</td>
+            <td headers="density">687</td>
+            <td headers="gravity">9.0</td>
+            <td headers="day-length">10.7</td>
+            <td headers="distance">1433.5</td>
+            <td headers="temperature">-140</td>
+            <td headers="moons">62</td>
+          </tr>
+          <tr>
+            <td rowspan="2" scope="rowgroup"><strong>Ice giants</strong></td>
+            <td headers="name"><strong>Uranus</strong></td>
+            <td headers="mass">86.8</td>
+            <td headers="diameter">51,118</td>
+            <td headers="density">1271</td>
+            <td headers="gravity">8.7</td>
+            <td headers="day-length">17.2</td>
+            <td headers="distance">2872.5</td>
+            <td headers="temperature">-195</td>
+            <td headers="moons">27</td>
+            <td headers="notes"></td>
+          </tr>
+          <tr>
+            <td headers="name"><strong>Neptune</strong></td>
+            <td headers="mass">102</td>
+            <td headers="diameter">49,528</td>
+            <td headers="density">1638</td>
+            <td headers="gravity">11.0</td>
+            <td headers="day-length">16.1</td>
+            <td headers="distance">4495.1</td>
+            <td headers="temperature">-200</td>
+            <td headers="moons">14</td>
+          </tr>
+          <tr>
+            <td colspan="2" scope="rowgroup"><strong>Dwarf planets</strong></td>
+            <td headers="name"><strong>Pluto</strong></td>
+            <td headers="mass">0.0146</td>
+            <td headers="diameter">2,370</td>
+            <td headers="density">2095</td>
+            <td headers="gravity">0.7</td>
+            <td headers="day-length">153.3</td>
+            <td headers="distance">5906.4</td>
+            <td headers="temperature">-225</td>
+            <td headers="moons">5</td>
+            <td headers="notes">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+          </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
