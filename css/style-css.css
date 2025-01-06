@@ -100,6 +100,30 @@ th, td {
     padding: 5px;
     max-width: 200px;
 }
+.section5 .box3::after {
+    content: " ➥";
+}
+.section5 .box4::before {
+    content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+.section6 h2 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+  }
+
+.section7 h2 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+  }
 /*
 Universal Selection at any element in the firt child of an article.
 article *:first-child {
