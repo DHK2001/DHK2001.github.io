@@ -64,6 +64,46 @@
             <hr>
         </section>
 
+        <section class="section3">
+            <h2 class="highlight">Class Selectors</h2>
+            <p>
+                Class selectors are used to apply the same style to <span class="highlight">multiple elements</span>. 
+                The class selector is a name preceded by a full stop (.) and the class name.
+            </p>
+            <p id="idselector">This is a ID selector.</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Selectors Examples</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>[attr^=value]</td>
+                    <td>li[class^="box-"]</td>
+                    <td>Matches elements with an attr attribute, whose value begins with value.</td>
+                  </tr>
+                  <tr>
+                    <td>[attr$=value]</td>
+                    <td>li[class$="-box"]</td>
+                    <td>Matches elements with an attr attribute whose value ends with value.</td>
+                  </tr>
+                  <tr>
+                    <td>[attr*=value]</td>
+                    <td>li[class*="box"]</td>
+                    <td>Matches elements with an attr attribute whose value contains value anywhere within the string.</td>
+                  </tr>
+                </tbody>
+            </table>
+        </section>
+
         <section>
             <h2>Examples</h2>
             <a href="css-examples/biography-styling/">Biography Styling</a>

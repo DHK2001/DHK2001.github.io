@@ -72,9 +72,36 @@
     background-color: rebeccapurple;
     transform: rotate(0.8turn);
 }
-
 /*@media (min-width: 30em) {
   body {
     background-color: blue;
   }
+}*/
+.section3 span.highlight {
+    background-color: yellow;
+}
+.section3 h2.highlight {
+    background-color: pink;
+}
+.section3 #idselector {
+    background-color: lightblue;
+}
+* { /*universal selector*/
+    margin: 5 auto;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+}
+th, td {
+    padding: 5px;
+    max-width: 200px;
+}
+/*
+Universal Selection at any element in the firt child of an article.
+article *:first-child {
+    font-weight: bold;
 }*/
