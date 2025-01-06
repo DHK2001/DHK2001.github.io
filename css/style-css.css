@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "zantrokeregular";
+    src:
+        url("../fonts/zantroke-webfont.woff") format("woff"),
+        url("../fonts/zantroke-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
 .nav-bar {
     list-style-type: none;
     padding: 20px 0px 5px 0px; 
@@ -202,6 +215,75 @@ th, td {
     width: 250px;
     height: 100px;
     overflow: auto;
+}
+.section10 p {
+    color: red;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.section10 h2 + p {
+    font-weight: bold;
+}
+.section10 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow:
+    1px 1px 1px red,
+    2px 2px 1px red;
+}
+.section10 p::first-line {
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+.section11 ul, ol, dl, p {
+  font-size: 1rem;
+}
+.section11 li, p {
+  line-height: 1.5;
+}
+.section11 dd, dt {
+  line-height: 1.5;
+}
+.section11 dt {
+  font-weight: bold;
+}
+.section11 ul {
+    padding-left: 1rem;
+    list-style-type: none;
+}
+.section11 ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+.section11 ul li {
+    padding-left: 2rem;
+    background-image: url(../star.svg);
+    background-position: 0 0;
+    background-size: 1.1rem 1.1rem;
+    background-repeat: no-repeat;
+}
+a {
+    outline-color: transparent;
+}
+a:link {
+    color: #6900ff;
+}
+a:visited {
+    color: #01228e;
+}
+a:focus {
+    text-decoration: none;
+    background: #bae498;
+}
+a:hover {
+    text-decoration: none;
+    background: #cdfeaa;
+}
+a:active {
+    background: #6900ff;
+    color: #cdfeaa;
 }
 /*
 Universal Selection at any element in the firt child of an article.
