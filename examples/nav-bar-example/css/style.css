@@ -101,6 +101,8 @@ p {
     padding: 15px;
     width: 300px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .menu-list img {
     width: 100%;
@@ -110,18 +112,21 @@ p {
     text-align: center;
     font-size: 20px;
     color: red;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 .menu-list h3 {
+    border-top: 1px solid gray;
     font-size: 16px;
     color: red;
     margin: 0;
-    padding: 0;
+    padding: 10px 0px 0px 0px;
+    margin-top: auto;
 }
 .menu-list p {
     font-size: 16px;
     margin: 0;
+    margin-bottom: 10px;
     padding: 5px 0px 0px 0px;
 }
 hr {
